@@ -1,0 +1,47 @@
+{
+    "name": "bloomjs",
+    "description": "A module wrapper to encrypt and decrypt files with aes-256-cbc",
+    "version": "0.1.0",
+    "homepage": "https://github.com/chrisenytc/bloom",
+    "author": {
+        "name": "Christopher EnyTC",
+        "email": "chrisenytc@gmail.com"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/chrisenytc/bloom.git"
+    },
+    "bugs": {
+        "url": "https://github.com/chrisenytc/bloom/issues"
+    },
+    "licenses": [{
+        "type": "MIT",
+        "url": "https://github.com/chrisenytc/bloom/blob/master/LICENSE"
+    }],
+    "main": "lib/bloom",
+    "bin": {
+        "bloom": "bin/bloom.js"
+    },
+    "engines": {
+        "node": ">= 0.10.26",
+        "npm": ">=1.4.3"
+    },
+    "scripts": {
+        "test": "make test"
+    },
+    "dependencies": {
+        "commander": "~2.1.0",
+        "update-notifier": "~0.1.7",
+        "colors": "~0.6.2"
+    },
+    "devDependencies": {
+        "mocha": "~1.10.0",
+        "chai": "~1.8.0"
+    },
+    "keywords": [
+        "encrypt",
+        "decrypt",
+        "files",
+        "aes"
+    ]
+}

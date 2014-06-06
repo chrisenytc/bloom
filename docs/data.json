@@ -1,0 +1,357 @@
+{
+    "project": {
+        "name": "Bloom API",
+        "description": "A module wrapper to encrypt and decrypt files with aes-256-cbc",
+        "version": "0.1.0",
+        "url": "https://github.com/chrisenytc/bloom"
+    },
+    "files": {
+        "lib/bloom.js": {
+            "name": "lib/bloom.js",
+            "modules": {},
+            "classes": {
+                "Bloom": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "lib/helpers.js": {
+            "name": "lib/helpers.js",
+            "modules": {},
+            "classes": {
+                "Helpers": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        }
+    },
+    "modules": {},
+    "classes": {
+        "Bloom": {
+            "name": "Bloom",
+            "shortname": "Bloom",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "file": "lib/bloom.js",
+            "line": 18
+        },
+        "Helpers": {
+            "name": "Helpers",
+            "shortname": "Helpers",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "file": "lib/helpers.js",
+            "line": 17
+        }
+    },
+    "classitems": [
+        {
+            "file": "lib/bloom.js",
+            "line": 11,
+            "description": "Module Dependencies",
+            "class": "Bloom"
+        },
+        {
+            "file": "lib/bloom.js",
+            "line": 26,
+            "description": "Method responsible for encrypt a file",
+            "example": [
+                "\n\n    bloom.encrypt('password32bits', 'iv16bits', 'path/to/source', 'path/to/output', function(data){});"
+            ],
+            "itemtype": "method",
+            "name": "encrypt",
+            "params": [
+                {
+                    "name": "password",
+                    "description": "Password is the raw password used by the algorithm",
+                    "type": "String"
+                },
+                {
+                    "name": "iv",
+                    "description": "Iv is an initialization vector",
+                    "type": "String"
+                },
+                {
+                    "name": "fileSource",
+                    "description": "File source path",
+                    "type": "String"
+                },
+                {
+                    "name": "fileOutput",
+                    "description": "File output",
+                    "type": "String"
+                },
+                {
+                    "name": "callback",
+                    "description": "Callback with source",
+                    "type": "Function"
+                }
+            ],
+            "access": "public",
+            "tagname": "",
+            "class": "Bloom"
+        },
+        {
+            "file": "lib/bloom.js",
+            "line": 64,
+            "description": "Method responsible for decrypt a file",
+            "example": [
+                "\n\n    bloom.decrypt('password32bits', 'iv16bits', 'path/to/source', 'path/to/output', function(data){});"
+            ],
+            "itemtype": "method",
+            "name": "decrypt",
+            "params": [
+                {
+                    "name": "password",
+                    "description": "Password secret",
+                    "type": "String"
+                },
+                {
+                    "name": "iv",
+                    "description": "Password secret",
+                    "type": "String"
+                },
+                {
+                    "name": "fileSource",
+                    "description": "File source path",
+                    "type": "String"
+                },
+                {
+                    "name": "fileOutput",
+                    "description": "File output",
+                    "type": "String"
+                },
+                {
+                    "name": "callback",
+                    "description": "Callback with source",
+                    "type": "Function"
+                }
+            ],
+            "access": "public",
+            "tagname": "",
+            "class": "Bloom"
+        },
+        {
+            "file": "lib/helpers.js",
+            "line": 25,
+            "description": "Method responsible for check if path exists",
+            "example": [
+                "\n\n    fileService.exists('./bloom');"
+            ],
+            "itemtype": "method",
+            "name": "exists",
+            "access": "public",
+            "tagname": "",
+            "params": [
+                {
+                    "name": "path",
+                    "description": "File path of archive",
+                    "type": "String"
+                }
+            ],
+            "return": {
+                "description": "Returns true if file exists",
+                "type": "String"
+            },
+            "class": "Helpers"
+        },
+        {
+            "file": "lib/helpers.js",
+            "line": 42,
+            "description": "Method responsible for reading files and get content",
+            "example": [
+                "\n\n    fileService.read('./bloom');"
+            ],
+            "itemtype": "method",
+            "name": "read",
+            "access": "public",
+            "tagname": "",
+            "params": [
+                {
+                    "name": "fillepath",
+                    "description": "File path of archive",
+                    "type": "String"
+                },
+                {
+                    "name": "encoding",
+                    "description": "Encoding",
+                    "type": "String"
+                }
+            ],
+            "return": {
+                "description": "Returns file content",
+                "type": "String"
+            },
+            "class": "Helpers"
+        },
+        {
+            "file": "lib/helpers.js",
+            "line": 61,
+            "description": "Method responsible for reading files as stream and get content",
+            "example": [
+                "\n\n    fileService.readStream('./bloom');"
+            ],
+            "itemtype": "method",
+            "name": "readStream",
+            "access": "public",
+            "tagname": "",
+            "params": [
+                {
+                    "name": "fillepath",
+                    "description": "File path of archive",
+                    "type": "String"
+                }
+            ],
+            "return": {
+                "description": "Returns file content",
+                "type": "String"
+            },
+            "class": "Helpers"
+        },
+        {
+            "file": "lib/helpers.js",
+            "line": 79,
+            "description": "Method responsible for writing files",
+            "example": [
+                "\n\n    fileService.write('./bloom', 'string data');"
+            ],
+            "itemtype": "method",
+            "name": "write",
+            "access": "public",
+            "tagname": "",
+            "params": [
+                {
+                    "name": "fillepath",
+                    "description": "File path of archive",
+                    "type": "String"
+                },
+                {
+                    "name": "data",
+                    "description": "Data of file",
+                    "type": "String"
+                }
+            ],
+            "class": "Helpers"
+        },
+        {
+            "file": "lib/helpers.js",
+            "line": 97,
+            "description": "Method responsible for create folders",
+            "example": [
+                "\n\n    fileService.mkdir('./bloom');"
+            ],
+            "itemtype": "method",
+            "name": "mkdir",
+            "access": "public",
+            "tagname": "",
+            "params": [
+                {
+                    "name": "path",
+                    "description": "folder path",
+                    "type": "String"
+                }
+            ],
+            "class": "Helpers"
+        },
+        {
+            "file": "lib/helpers.js",
+            "line": 113,
+            "description": "Method responsible for remove files",
+            "example": [
+                "\n\n    fileService.remove('./bloom');"
+            ],
+            "itemtype": "method",
+            "name": "remove",
+            "access": "public",
+            "tagname": "",
+            "params": [
+                {
+                    "name": "path",
+                    "description": "File path of archive",
+                    "type": "String"
+                }
+            ],
+            "class": "Helpers"
+        },
+        {
+            "file": "lib/helpers.js",
+            "line": 129,
+            "description": "Method responsible for remove directories",
+            "example": [
+                "\n\n    fileService.rm('./bloom');"
+            ],
+            "itemtype": "method",
+            "name": "rm",
+            "access": "public",
+            "tagname": "",
+            "params": [
+                {
+                    "name": "path",
+                    "description": "File path of directory",
+                    "type": "String"
+                }
+            ],
+            "class": "Helpers"
+        },
+        {
+            "file": "lib/helpers.js",
+            "line": 155,
+            "description": "Method responsible for check if path is a file",
+            "example": [
+                "\n\n    fileService.isFile('./bloom');"
+            ],
+            "itemtype": "method",
+            "name": "isFile",
+            "access": "public",
+            "tagname": "",
+            "params": [
+                {
+                    "name": "path",
+                    "description": "File path of archive",
+                    "type": "String"
+                }
+            ],
+            "return": {
+                "description": "Returns true if path is file",
+                "type": "String"
+            },
+            "class": "Helpers"
+        },
+        {
+            "file": "lib/helpers.js",
+            "line": 173,
+            "description": "Method responsible for check if path is a directory",
+            "example": [
+                "\n\n    fileService.isDir('./bloom');"
+            ],
+            "itemtype": "method",
+            "name": "isDir",
+            "access": "public",
+            "tagname": "",
+            "params": [
+                {
+                    "name": "path",
+                    "description": "File path of archive",
+                    "type": "String"
+                }
+            ],
+            "return": {
+                "description": "Returns true if path is directory",
+                "type": "String"
+            },
+            "class": "Helpers"
+        }
+    ],
+    "warnings": [
+        {
+            "message": "Missing item type\nModule Dependencies",
+            "line": " lib/bloom.js:11"
+        }
+    ]
+}

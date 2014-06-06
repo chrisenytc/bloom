@@ -1,0 +1,5 @@
+node_modules
+test/temp/*.mp4
+.idea/
+*.log
+.DS_Store
