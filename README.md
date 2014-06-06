@@ -1,4 +1,4 @@
-# ![Bloom](logo.png)
+# ![Bloom](https://raw.githubusercontent.com/chrisenytc/bloom/master/logo.png)
 
 > A module wrapper to encrypt and decrypt files with aes-256-cbc
 
@@ -163,7 +163,7 @@ If you have any problem or suggestion please open an issue [here](https://github
 
 ## Screenshort
 
-![Screenshort](screenshort.png)
+![Screenshort](https://raw.githubusercontent.com/chrisenytc/bloom/master/screenshort.png)
 
 ## License 
 
