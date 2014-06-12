@@ -1,4 +1,8 @@
+v0.1.1:
+  date: 2014-6-12
+  changes:
+    - Fixed grammatical error
 v0.1.0:
-  date: 2014-5-6
+  date: 2014-6-12
   changes:
     - Initial release.
