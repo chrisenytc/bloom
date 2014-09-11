@@ -1,7 +1,7 @@
 {
     "name": "Bloom API",
     "description": "A module wrapper to encrypt and decrypt files with aes-256-cbc",
-    "version": "0.1.1",
+    "version": "0.1.2",
     "url": "https://github.com/chrisenytc/bloom",
     "options": {
         "outdir": "./docs",

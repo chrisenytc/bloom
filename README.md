@@ -161,10 +161,6 @@ Please submit all issues and pull requests to the [chrisenytc/bloom](http://gith
 ## Support
 If you have any problem or suggestion please open an issue [here](https://github.com/chrisenytc/bloom/issues).
 
-## Screenshot
-
-![Screenshot](https://raw.githubusercontent.com/chrisenytc/bloom/master/screenshot.png)
-
 ## License 
 
 The MIT License

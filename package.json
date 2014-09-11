@@ -1,7 +1,7 @@
 {
     "name": "bloomjs",
     "description": "A module wrapper to encrypt and decrypt files with aes-256-cbc",
-    "version": "0.1.1",
+    "version": "0.1.2",
     "homepage": "https://github.com/chrisenytc/bloom",
     "author": {
         "name": "Christopher EnyTC",
